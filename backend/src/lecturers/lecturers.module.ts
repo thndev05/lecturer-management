@@ -6,7 +6,10 @@ import { LecturersController } from './lecturers.controller';
 import { LecturersService } from './lecturers.service';
 
 @Module({
-  imports: [AuthModule, MongooseModule.forFeature([{ name: GiangVien.name, schema: GiangVienSchema }])],
+  imports: [
+    AuthModule,
+    MongooseModule.forFeature([{ name: GiangVien.name, schema: GiangVienSchema }]),
+  ],
   controllers: [LecturersController],
   providers: [LecturersService],
 })

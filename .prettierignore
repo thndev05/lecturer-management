@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.expo/
+coverage/
+package-lock.json
+.env
+.env.*
+.claude/
+.agents/
+.codex/
+AGENTS.md
+CLAUDE.md

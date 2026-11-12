@@ -4,8 +4,8 @@
 
 ## Công nghệ và chức năng
 
-- **`app/`**: Expo SDK 58, React Native, TypeScript, Expo Router và NativeWind. Hiện là bộ khung, chưa kết nối API.
-- **`backend/`**: NestJS, MongoDB/Mongoose, JWT và Cloudinary. Đã có đăng ký/đăng nhập quản trị, CRUD giảng viên, tìm kiếm theo tên/mã, upload ảnh và xuất JSON.
+- **`app/`**: Expo SDK 58, React Native, TypeScript, Expo Router và NativeWind. Giao diện quản trị có đăng nhập, CRUD giảng viên, chọn ảnh, tìm kiếm/lọc/sắp xếp, xuất Excel/JSON, tiếng Việt/Anh và chế độ sáng/tối.
+- **`backend/`**: NestJS, MongoDB/Mongoose, JWT và Cloudinary. Đăng nhập bằng một tài khoản trong `.env`, CRUD giảng viên, tìm kiếm theo tên/mã, upload ảnh và xuất JSON.
 
 ## Chạy dự án
 
@@ -39,3 +39,7 @@ npm start
 Dùng Expo Go hỗ trợ SDK 58 hoặc `npm run web`. Khi cần tunnel cho Metro trong WSL, chạy `npm start -- --tunnel`; tunnel backend được cấu hình riêng. `EXPO_PUBLIC_API_URL` trong `app/.env` phải là URL backend thiết bị truy cập được, có hậu tố `/api`.
 
 Không đưa `.env` hoặc thông tin bí mật lên Git. Chi tiết API và cách kiểm thử nằm trong [backend/README.md](backend/README.md).
+
+## Format mã nguồn
+
+Trong `app/` hoặc `backend/`, chạy `npm run format` để format bằng Prettier, hoặc `npm run format:check` để kiểm tra. Hai phần dùng chung cấu hình `.prettierrc.json` ở thư mục gốc.

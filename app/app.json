@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Init PRJ",
+    "name": "Lecturer Management",
     "slug": "init-prj",
     "scheme": "initprj",
     "version": "1.0.0",
@@ -12,7 +12,8 @@
       "expo-font",
       "expo-splash-screen",
       "expo-image",
-      "expo-localization"
+      "expo-localization",
+      "expo-sharing"
     ],
     "web": {
       "bundler": "metro",

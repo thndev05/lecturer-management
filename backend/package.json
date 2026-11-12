@@ -12,7 +12,9 @@
     "start:dev": "nest start --watch",
     "start:prod": "node dist/main.js",
     "typecheck": "tsc --noEmit",
-    "test": "npm run build && node --test test/*.e2e.cjs"
+    "test": "npm run build && node --test test/*.e2e.cjs",
+    "format": "prettier --ignore-path ../.prettierignore --write .",
+    "format:check": "prettier --ignore-path ../.prettierignore --check ."
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
@@ -23,7 +25,6 @@
     "@nestjs/platform-express": "^11.0.1",
     "@nestjs/swagger": "^11.4.5",
     "@nestjs/throttler": "^6.7.1",
-    "bcryptjs": "^3.0.3",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.15.1",
     "cloudinary": "^2.11.0",
@@ -37,6 +38,7 @@
     "@types/express": "^5.0.0",
     "@types/multer": "^2.3.0",
     "@types/node": "^24.0.0",
+    "prettier": "3.10.0",
     "typescript": "~5.9.2"
   }
 }
