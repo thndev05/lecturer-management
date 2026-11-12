@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "Init PRJ",
+    "slug": "init-prj",
+    "scheme": "initprj",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      "expo-splash-screen",
+      "expo-image",
+      "expo-localization"
+    ],
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    }
+  }
+}
